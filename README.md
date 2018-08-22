@@ -1,1 +1,0 @@
-# TEDxYouth-JPIS2019
