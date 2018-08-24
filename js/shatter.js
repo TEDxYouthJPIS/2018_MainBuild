@@ -303,7 +303,7 @@ function loadImage(src, width, height,cb){
 }
 
 function drawImageToCanvas(canvas, img){
-    var image = loadImage(img, 490, 313,function(){
+    var image = loadImage(img, 980, 616,function(){
         
         canvas.drawImage(image, 0, 0 )  
 
