@@ -387,7 +387,7 @@ Scroller.init = function(){
 
 
 var mainCanvas = getCanvasContext('base-canvas')
-drawImageToCanvas(mainCanvas, 'TEDx1.png')
+drawImageToCanvas(mainCanvas, 'Assets/TEDx1.png')
 
 
 

@@ -1,59 +1,91 @@
-<!DOCTYPE html>
 <html lang="en">
+
 	<head>
 		<meta charset="UTF-8">
+		<meta name="description" content="Official website for TEDxYouth@JPIS 2018">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="keywords" content="TEDxYouth,JPIS,Jaipur,TEDx,Ted Talks">
 		<title>TEDxYouth@JPIS</title>
-		<link rel="stylesheet" href="css/style.css">
-		<script src="js/jquery-3.3.1.js"></script>
-		<script src="js/jQuery.scrollSpeed.js"></script>
-		<script>
-				$(function() {
-						jQuery.scrollSpeed(100, 1000);
-				});
-		</script>
+		<meta name="author" content="JPIS">
+		<link rel="icon" href="Assets/favicon.png" type="image/png">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+		<link rel="stylesheet" href="Assets/css/style.css">
+		<script src="Assets/js/jquery-3.3.1.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<script src="Assets/js/images.js"></script>
 	</head>
+
 	<body>
-		<div>
-			<!-- Edit the JS and Canvas for changing the object -->
-			<canvas width="490" height="313" id="base-canvas"></canvas>
-			<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/152724/three.min.js'></script>
-			<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/152724/CSS3DRenderer.js'></script>
-			<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/152724/TimelineMax.min.js'></script>
-			<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/152724/TweenMax.min.js'></script>
-			<script src="js/shatter.js"></script>
-		</div>
-		
-		<div class="hero-wrapper">
-			<div class="hero-img-wrapper">
-				<!-- <img src="assets/images/TEDx1.png" alt="" class="hero-img"> -->
+
+      <nav class="navbar navbar-expand-lg ted-nav navbar-dark">
+  				 <a class="navbar-brand head" href="#"><img src="logo.png" class="logo"></a>
+  				 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      			 <span class="navbar-toggler-icon"></span>
+
+    				</button>
+    				 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      				<ul class="navbar-nav mr-auto">
+								<li class="nav-item active">
+									<a class="nav-link mt-2 ml-3 mb-2" href="#">Home</a>
+								</li>
+      					<li class="nav-item ">
+          					<a class="nav-link mt-2 ml-3 mb-2" href="about.html">About</a>
+        					</li>
+        					<li class="nav-item ">
+          					<a class="nav-link mt-2 ml-3 mb-2" href="team.html">Team</a>
+        					</li>
+        					<li class="nav-item ">
+          					<a class="nav-link mt-2 ml-3 mb-2" href="https://www.ted.com/tedx/events/24850" target="_blank">TEDxYouth@JPIS '17</a>
+        					</li>
+                  <li class="nav-item ">
+                    <a class="nav-link mt-2 ml-3 mb-2" href="https://www.ted.com/tedx/events/18938" target="_blank">TEDxYouth@JPIS '16</a>
+                  </li>
+      				</ul>
+
+      			</div>
+  			</nav>
+			<div id="particles-js">
+      <div class="hero">
+        <h1 class="hero-text">
+          SHATTER
+          <span class="typer" id="main" data-words="LIMITS,STEREOTYPES,EXPECTATIONS,THE GLASS CEILING" data-colors="white" data-delay="85" data-deleteDelay="500"></span>
+        </h1>
+      </div>
+					<div id="clockdiv">
+          <div>
+            <span class="days"></span>
+            <div class="smalltext d">Days</div>
+          </div>
+          <div>
+            <span class="hours"></span>
+            <div class="smalltext h">Hours</div>
+          </div>
+          <div>
+            <span class="minutes"></span>
+            <div class="smalltext m">Minutes</div>
+          </div>
+          <div>
+            <span class="seconds"></span>
+            <div class="smalltext s">Seconds</div>
+          </div>
+        </div>
+        <script src="Assets/js/timer.js"></script>
 			</div>
-			<div class="theme-header">
-				<h1 class="theme-header-h1">TEDxYouth@JPIS 2018</h1>
-			</div>
-			<div class="tagline">
-				<h3 class="tagline-h3">This <span class="tagline-h3" style="font-weight: bold;">December 14th</span>, Shatter.</h3>
-			</div>
-			<div id="timer">
-				<div id="clockdiv">
-					<div>
-						<span class="days"></span>
-						<div class="smalltext">Days</div>
-					</div>
-					<div>
-						<span class="hours"></span>
-						<div class="smalltext">Hours</div>
-					</div>
-					<div>
-						<span class="minutes"></span>
-						<div class="smalltext">Minutes</div>
-					</div>
-					<div>
-						<span class="seconds"></span>
-						<div class="smalltext">Seconds</div>
-					</div>
-				</div>
-				<script src="js/timer.js"></script>
-			</div>
-		</div>
-	</body>
-</html>
+  	</div>
+
+    <!-- Scripts -->
+    <script src="Assets/js/typer.js"></script>
+    <script type="text/javascript" src="Assets/js/particles.js"></script>
+    <script type="text/javascript" src="Assets/js/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  </body>
+
+  </html>
