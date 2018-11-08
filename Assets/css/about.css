@@ -16,10 +16,10 @@ body{
   line-height: 40px;
   text-align: left;
   margin-top: 30px;
-  line-height: 10x;
-  letter-spacing: 5px;
+  line-height: 7.5x;
+  letter-spacing: 2.7px;
 }.p-content::first-letter{
-  font-size: 25px;
+  font-size: 18px;
 }
 .head-text{
 color:white;

@@ -9,7 +9,7 @@
 
  * {
    color: black;
-   font-family: 'Futura',sans-serif;
+   font-family: "Arial", Helvetica, sans-serif
    src: url('assets/futura.ttf');
  }
 
@@ -160,7 +160,7 @@
 }
 .active{
   font-weight: 700;
-  text-decoration:line-through;
+  text-decoration: bold;
   color: #FF2B06!important;
 /*TeamPage*/
 @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
