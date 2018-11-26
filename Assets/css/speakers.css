@@ -1,0 +1,45 @@
+*{
+  overflow-y: scroll!important;
+}
+.row{
+  display: flex;
+  justify-content: space-around;
+  z-index: 2147483647!important;
+}
+.cell{
+  width: 200px;
+  height: 200px;
+  transition: 0.5s all;
+  background-image: url('../images/avatar.png');
+  background-size: cover;
+  border-radius: 50%;
+  margin-top: 50px;
+  z-index: 2147483647!important;
+}
+canvas{
+  margin-top: -750px;
+  z-index: -1!important;
+}
+#particles-js{
+  z-index: -1!important;
+}
+@media only screen and (max-width:500px){
+  .row{
+    flex-direction: column;
+    justify-content: space-evenly;
+  }.cell{
+      margin-left: 25%;
+      margin-top: 50px;
+  }*{
+    overflow-y: scroll;
+  }
+  canvas{
+    margin-top: -2500px;
+    height: 400%!important;
+  }
+}
+.cell:hover{
+  transition: 0.5s all;
+  border:3px solid #FF2B06;
+  transform: scale(1.1);
+}
