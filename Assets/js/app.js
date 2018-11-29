@@ -14,10 +14,10 @@ particlesJS.load('particles-js', 'particles.json', function() {
 particlesJS('particles-js', {
   "particles": {
     "number": {
-      "value": 140,
+      "value": 96,
       "density": {
         "enable": true,
-        "value_area": 670
+        "value_area": 670,
       }
     },
     "color": {
