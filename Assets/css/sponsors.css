@@ -23,7 +23,7 @@ body{
   border: 2px solid white;
 }
 
-@media only screen and (max-width:500px){
+@media only screen and (max-width:800px){
   .grid{
     flex-direction: column;
   }.item{
@@ -40,6 +40,12 @@ body{
     transform: translateY(100%)!important;
     color:white;
   }
+}
+
+@media only screen and (max-width: 1200px) {
+	.grid{
+		flex-direction: column;
+	}
 }
 
 canvas{

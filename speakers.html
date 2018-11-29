@@ -17,6 +17,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="Assets/js/images.js"></script>
+    <link rel="stylesheet" href="Assets/css/speaker.css">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg ted-nav navbar-dark">
@@ -52,41 +53,52 @@
         </ul>
       </div>
     </nav>
-    <div class="back">
+    <div id="particles-js">
+    <div class="tiles">
+				<div class="tile" data-toggle="modal" data-target="#hitesh">
+					<img src="Assets/images/speakers/hitesh-oberoi.png"/>
+					<div class="details">
+						<span class="title">Hitesh Oberoi</span>
+						<span class="info">Owner - InfoEdge</span>
+					</div>
+				</div>
 
-      <div id="profile_left" class="profile_div">
-        <img src="Assets/images/speakers/hitesh-oberoi.png" style="height: 100%;">
-      </div>
-      <div id="profile_right" class="profile_div"><h1 class="name">Hitesh Oberoi</h1>
-        <p class='body'>Naukri.com, Jeevansaathi.com, 99acres.com, Shiksha.com  — there are very few of us who do not recognise these names, all undertakings of Hitesh Oberoi. CEO and MD of InfoEdge, Mr. Oberoi boasts of a degree from IIT Delhi and IIM Bangalore, even having the prestigious Ernst & Young – Entrepreneur of the Year award in 2008 for Business Transformation, and today possesses the ability to create and implement ideas in a variety of fields with his versatility and creativity. He is a founder and on the Board of Directors at the highly acclaimed Ashoka University while being a part of various industry forums alike TiE post 18 years of experience in the internet industry. Truly, this business aficionado has consistently been ‘shattering’ records and boundaries with his extreme hard work, undying dedication and pure brilliance. Come witness his brilliance and shattering of limits, and expectations, this 14th December at TEDxYouth@JPIS.
-        </p>
-      </div>
-      <div id="profile_left" class="profile_div">
-        <h1 class="name">Kaizaad Kotwal</h1>
-        <p class='body'>A director, producer, actor, designer and even a professor of theatre, film and media studies — Kaizaad Kotwal is a man of multiple talents. Producing and directing the much acclaimed ‘Vagina Monologues’ under his own company, Poor-Box Productions, while acting in blockbuster films like ‘Airlift’, Mr. Kotwal has been quintessential in bringing magnificent manifestations of artistic thought to audiences internationally. He has received numerous accolades, including an Emmy Award for Art Direction, the Griffin Society Award for Best Professor and the prestigious Karmaveer Chakra award for his work in social justice through his foundation — Make-a-difference. With over 200 productions under his belt, we cannot wait to witness the ‘shattering’ thoughts and ideas Mr. Kotwal brings to the stage of TEDxYouth@JPIS, this December 14th.</p>
-      </div>
-      <div id="profile_right" class="profile_div">
-        <img src="Assets/images/speakers/kaizaad-kotwal.jpg" style="height: 100%">
-      </div>
-      <div id="profile_left" class="profile_div">
-        <h1 class="name">Cyrus Broacha</h1>
-        <p class="body">A name immediately recognised as the prankster behind the renowned shows, Bakra and The Week That Wasn't on MTV and CNN News18 respectively, Mr. Cyrus Broacha is even a TV anchor, theatre personality, comedian, podcaster and much more. He rose to fame at the tender age of 12, acting in his first Hindi film Jalwa followed by his first professional play, Brighton Beach Memoirs which gained him the status of ‘a child prodigy’ from the media. As an anchor, Mr. Broacha has interviewed almost every Bollywood actor and cricketer from various generations while hosting various shows including the highly reputed Chevrolet Cricket Show. If this wasn’t enough, he is also a columnist who writes for two leading national papers and two magazines and the author of three books. Truly a man who has donned multiple hats and perfected them, Mr. Broacha is a buzzing, humorous personality who is coming to tickle all our funny bones and inspire us with the shattering of multiple perceptions and expectations through his prodigious stories, this 14th December.</p>
-      </div>
-      <div id="profile_right" class="profile_div">
-        <img src="Assets/images/speakers/">
-      </div>
-      <div id="profile_left" class="profile_div">
-        <img src="Assets/images/speakers/manu-chopra.jpg" style="height: 100%;">
-      </div>
-      <div id="profile_right" class="profile_div">
-        <h1 class="name">Manu Chopra</h1>
-        <p class="body">The ‘Innovator of the Year’, as declared by the Indian President, Manu Chopra is a socially driven genius and tech wizard who is working on tackling extreme poverty in rural India by increasing access to dignified digital work, and creating a social impact through the brilliant use of technology. From having developed a patented anti-molestation device as a teenager in high school to combat increasing rape cases, to creating a hack called ‘Narada’ that brings signal connectivity and internet access to Indians in remote villages, Manu is single-handedly transforming this world for the better. He recently graduated from Stanford University, where he co-founded CS+Social Good, Stanford's first student group focused on tech & impact. He also lectured several tech-for-good courses in Stanford's CS Department. Last year alone, the students in his classes built projects that reached millions of people in 15 countries around the globe. A prodigy in his own right and a part of India’s 20 Most Brilliant Minds Under 20 by Times Of India, we eagerly wait for Manu to ‘shatter’ our perceptions of what good technology can do, this 14th of December at TEDxYouth@JPIS 2018.</p>
-      </div>
-      <!-- <div id="profile_9" class="profile_div"></div>
-      <div id="profile_10" class="profile_div"></div>
-      <div id="profile_11" class="profile_div"></div>
-      <div id="profile_12" class="profile_div"></div> -->
-    </div>
+				<div class="tile" data-toggle="modal" data-target="#kaizaad">
+					<img src="Assets/images/speakers/kaizaad-kotwal.jpg"/>
+					<div class="details">
+						<span class="title">Kaizaad Kotwal</span>
+						<span class="info">Producer. Director. Writer.</span>
+					</div>
+				</div>
+
+				<div class="tile" data-toggle="modal" data-target="#manu">
+					<img src="Assets/images/speakers/manu-chopra.jpg"/>
+					<div class="details">
+						<span class="title">Manu Chopra</span>
+						<span class="info">AI. Computer Science.</span>
+					</div>
+				</div>
+		</div>
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="hitesh" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Hitesh Oberoi</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        ...
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
     <script type="text/javascript" src="Assets/js/particles.js"></script>
     <script type="text/javascript" src="Assets/js/app.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
