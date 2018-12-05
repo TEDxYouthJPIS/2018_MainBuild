@@ -18,6 +18,47 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="Assets/js/images.js"></script>
     <link rel="stylesheet" href="Assets/css/speaker.css">
+    <style>
+      canvas{
+        margin-top: -1000px;
+      }.scroll{
+        background: black!important;
+        transition: 0.5s all;
+	border:2px solid white;
+      }
+      .scrollItem{
+        color:white!important;
+        transition: 0.5s all;
+      }.logoClass{
+        opacity: 1;
+        transition: 0.5s all;
+      }.logo{
+        transition: 0.5s all;
+      }
+      .nav-link{
+        transition: 0.5s all;
+      }
+    </style>
+    <script>
+    function addClass(){
+      if (window.matchMedia('(min-width: 767px)').matches) {
+        var lastScrollTop = 0;
+        $("#particles-js").scroll(function(event){
+           var st = $(this).scrollTop();
+           if (st > lastScrollTop){
+              $("nav").addClass("scroll");
+              $(".nav-link").addClass("scrollItem");
+              $(".logo").addClass("logoClass");
+           } else {
+              $("nav").removeClass("scroll");
+              $(".nav-link").removeClass("scrollItem");
+              $(".logo").removeClass("logoClass");
+           }
+           lastScrollTop = st;
+        });
+      }
+    }
+    </script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg ted-nav navbar-dark">
@@ -53,55 +94,87 @@
         </ul>
       </div>
     </nav>
-    <div id="particles-js">
-    <div class="tiles">
-				<div class="tile" data-toggle="modal" data-target="#hitesh">
-					<img src="Assets/images/speakers/hitesh-oberoi.png"/>
-					<div class="details">
-						<span class="title">Hitesh Oberoi</span>
-						<span class="info">Owner - InfoEdge</span>
-					</div>
-				</div>
 
-				<div class="tile" data-toggle="modal" data-target="#kaizaad">
-					<img src="Assets/images/speakers/kaizaad-kotwal.jpg"/>
-					<div class="details">
-						<span class="title">Kaizaad Kotwal</span>
-						<span class="info">Producer. Director. Writer.</span>
-					</div>
-				</div>
+    <div id="particles-js" style="overflow-y:scroll;"onscroll="addClass()">
 
-				<div class="tile" data-toggle="modal" data-target="#manu">
-					<img src="Assets/images/speakers/manu-chopra.jpg"/>
-					<div class="details">
-						<span class="title">Manu Chopra</span>
-						<span class="info">AI. Computer Science.</span>
-					</div>
-				</div>
-		</div>
+    <div class="row">
+      <div class="item" id='item1' data-toggle="modal" data-target="#hitesh">
+        <div class="inlay">
+          <h1 class="name">Hitesh Oberoi</h1>
+          <p class="text">Owner - InfoEdge</p>
+        </div>
+      </div>
+      <div class="item" id='item2' data-toggle="modal" data-target="#kaizaad">
+        <div class="inlay">
+          <h1 class="name">Kaizaad Kotwal</h1>
+          <p class="text">Producer. Director. Writer.</p>
+        </div>
+      </div>
+      <div class="item" id='item3'data-toggle="modal" data-target="#manu">
+        <div class="inlay">
+          <h1 class="name">Manu Chopra</h1>
+          <p class="text">AI. Computer Science.</p>
+        </div>
+      </div>
+      <div class="item" id='item4'data-toggle="modal" data-target="#amit">
+        <div class="inlay">
+          <h1 class="name">Amit Lodha</h1>
+          <p class="text">IPS. Novelist. Sportsperson.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="item" id='item5' data-toggle="modal" data-target="#hitesh">
+        <div class="inlay">
+          <h1 class="name">Abhishek Singh</h1>
+          <p class="text">Founder of Peeqo. Technovator.</p>
+        </div>
+      </div>
+      <div class="item" id='item6' data-toggle="modal" data-target="#kaizaad">
+        <div class="inlay">
+          <h1 class="name">Anuranjita Kumar</h1>
+          <p class="text">One of Fortune's Most Powerful Woman Leader's</p>
+        </div>
+      </div>
+      <div class="item" id='item7'data-toggle="modal" data-target="#manu">
+        <div class="inlay">
+          <h1 class="name">Bickram Gosh</h1>
+          <p class="text">Artist. Musician.</p>
+        </div>
+      </div>
+      <div class="item" id='item8'data-toggle="modal" data-target="#amit">
+        <div class="inlay">
+          <h1 class="name">Cyrus Broacha</h1>
+          <p class="text">Comedian. Political Satirist.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="item" id='item9' data-toggle="modal" data-target="#hitesh">
+        <div class="inlay">
+          <h1 class="name">Kush Kamra</h1>
+          <p class="text">Trendsetter. Business Guru.</p>
+        </div>
+      </div>
+      <div class="item" id='item10' data-toggle="modal" data-target="#kaizaad">
+        <div class="inlay">
+          <h1 class="name">Sabika Naqvi</h1>
+          <p class="text">Poet. Feminist.</p>
+        </div>
+      </div>
+    </div>
 		<!-- Modal -->
-		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="hitesh" aria-hidden="true">
-		  <div class="modal-dialog" role="document">
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <h5 class="modal-title" id="exampleModalLabel">Hitesh Oberoi</h5>
-		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-		          <span aria-hidden="true">&times;</span>
-		        </button>
-		      </div>
-		      <div class="modal-body">
-		        ...
-		      </div>
-		      <div class="modal-footer">
-		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-		      </div>
-		    </div>
-		  </div>
-		</div>
 
+
+
+</div>
     <script type="text/javascript" src="Assets/js/particles.js"></script>
     <script type="text/javascript" src="Assets/js/app.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="Assets/js/jquery-3.3.1.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
