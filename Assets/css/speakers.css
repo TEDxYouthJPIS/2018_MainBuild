@@ -71,6 +71,14 @@
   background: url('../images/speakers/sabika_naqvi.jpg');
   background-size: cover;
 }
+#item11{
+  background: url('../images/speakers/yash_mangal.jpg');
+  background-size: cover;
+}
+#item12{
+  background: url('../images/speakers/uditi_mishra.jpg');
+  background-size: cover;
+}
 .name, .text{
   color: white;
   display: none;
